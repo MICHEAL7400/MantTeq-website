@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MantTeq | Innovative Technology Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="preload" href="fonts/your-font.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../STYLES/index.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="../ASSETS/Logo/logo2.jpg" alt="MantTeq Logo">
+            </a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="btn btn-accent">Get in Touch</a>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <header class="hero">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-content animate slide-up delay-1">
+                        <h1>Tech Solutions That <span class="highlight">Just Work</span></h1>
+                        <p>We deliver cutting-edge technology solutions tailored to your business needs, ensuring seamless integration and maximum efficiency.</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-primary">Our Services</a>
+                            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <h1>Innovative <span class="highlight">Digital Solutions</span></h1>
+                        <p>Transforming your ideas into powerful digital experiences that drive growth and engagement.</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <h1>Your Vision, <span class="highlight">Our Code</span></h1>
+                        <p>Custom software development designed to meet your unique requirements and exceed expectations.</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-primary">Learn More</a>
+                            <a href="#contact" class="btn btn-secondary">Free Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-indicators"></div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card animate slide-up delay-1">
+                    <i class="fas fa-code"></i>
+                    <h3>Custom Development</h3>
+                    <p>Tailored software solutions built specifically for your business requirements and workflows.</p>
+                    <button class="btn btn-secondary service-btn" data-service="custom-development">Learn More</button>
+                </div>
+                <div class="service-card animate slide-up delay-2">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable and secure cloud infrastructure to power your applications and services.</p>
+                    <button class="btn btn-secondary service-btn" data-service="cloud-solutions">Learn More</button>
+                </div>
+                <div class="service-card animate slide-up delay-3">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Audits</h3>
+                    <p>Comprehensive security assessments to identify and fix vulnerabilities in your systems.</p>
+                    <button class="btn btn-secondary service-btn" data-service="security-audits">Learn More</button>
+                </div>
+                <div class="service-card animate slide-up delay-1">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Optimization</h3>
+                    <p>Performance tuning and query optimization to ensure your databases run at peak efficiency.</p>
+                    <button class="btn btn-secondary service-btn" data-service="database-optimization">Learn More</button>
+                </div>
+                <div class="service-card animate slide-up delay-2">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Cross-platform mobile applications for iOS and Android that deliver seamless user experiences.</p>
+                    <button class="btn btn-secondary service-btn" data-service="mobile-development">Learn More</button>
+                </div>
+                <div class="service-card animate slide-up delay-3">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automation</h3>
+                    <p>Workflow automation solutions to streamline operations and reduce manual tasks.</p>
+                    <button class="btn btn-secondary service-btn" data-service="automation">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Modals -->
+    <div id="custom-development-modal" class="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Custom Development</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our custom development service creates tailored software solutions designed specifically for your business needs. Unlike off-the-shelf software, our custom solutions are built from the ground up to match your exact requirements, workflows, and business processes.</p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completely tailored to your business needs</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Scalable architecture for future growth</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Integration with existing systems</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ongoing support and maintenance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>We follow an agile development process that includes you at every stage, from initial concept to final deployment. Our team of experienced developers uses the latest technologies and best practices to deliver robust, secure, and high-performance applications.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="cloud-solutions-modal" class="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Cloud Solutions</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our cloud solutions provide scalable, secure, and cost-effective infrastructure for your applications and services. We help you leverage the power of cloud computing to improve performance, reliability, and business agility.</p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cloud migration strategy and execution</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multi-cloud and hybrid cloud solutions</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cost optimization and monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Disaster recovery planning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>Whether you're looking to migrate existing applications to the cloud or build new cloud-native solutions, our team has the expertise to guide you through the process. We work with all major cloud providers including AWS, Azure, and Google Cloud Platform.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="security-audits-modal" class="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Security Audits</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our comprehensive security audits identify vulnerabilities in your systems before they can be exploited. We provide detailed reports with actionable recommendations to strengthen your security posture and protect your business.</p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Penetration testing and vulnerability scanning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Code review and architecture assessment</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Compliance with industry standards</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Security training for your team</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>Our security experts use a combination of automated tools and manual testing techniques to uncover security weaknesses. We follow industry best practices and frameworks such as OWASP, NIST, and ISO 27001 to ensure thorough coverage.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="database-optimization-modal" class="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Database Optimization</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our database optimization services improve the performance, reliability, and scalability of your database systems. We analyze your current setup, identify bottlenecks, and implement solutions to maximize efficiency.</p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Query performance analysis and tuning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Index optimization and schema redesign</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Database configuration tuning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Migration and upgrade assistance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>We work with all major database systems including MySQL, PostgreSQL, MongoDB, SQL Server, and Oracle. Our optimizations can often achieve performance improvements of 10x or more, reducing hardware costs and improving user experience.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-development-modal" class="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Mobile Development</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>We create beautiful, high-performance mobile applications for iOS and Android that engage users and drive business results. Our mobile apps are built with the latest technologies and follow platform-specific design guidelines.</p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Native and cross-platform development</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>UI/UX design optimized for mobile</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Integration with backend systems</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>App store submission and management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>From concept to launch and beyond, we guide you through the entire mobile app development process. We use technologies like Swift, Kotlin, React Native, and Flutter to build apps that perform beautifully on all devices.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="automation-modal" class="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Automation</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our automation solutions streamline your business processes, reduce manual work, and minimize errors. We identify repetitive tasks that can be automated and implement robust solutions to handle them efficiently.</p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Business process automation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Data processing and ETL pipelines</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Testing and deployment automation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>AI-powered intelligent automation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>We use a variety of tools and technologies including Python scripts, RPA platforms, CI/CD pipelines, and custom solutions to automate your workflows. Our automation solutions can save your team hundreds of hours while improving accuracy and consistency.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Recent <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card animate slide-up delay-1">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A custom-built e-commerce solution with advanced product customization options and seamless payment integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate slide-up delay-2">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Business Analytics Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Business Analytics Dashboard</h3>
+                        <p>Real-time data visualization and business intelligence platform with custom reporting capabilities.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Angular</span>
+                            <span class="project-tag">D3.js</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate slide-up delay-3">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Healthcare Mobile App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Healthcare Mobile App</h3>
+                        <p>Patient management and telemedicine application with secure messaging and video consultation features.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">HIPAA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> App Store</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Play Store</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently <span class="highlight">Asked Questions</span></h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What industries do you specialize in?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have experience working across various industries including healthcare, finance, e-commerce, education, and manufacturing. Our technology solutions are adaptable to any industry, and we take the time to understand your specific business needs and challenges.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you ensure the quality of your deliverables?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We follow industry best practices including code reviews, automated testing, continuous integration, and thorough QA processes. Our development methodology includes regular client checkpoints to ensure we're meeting expectations throughout the project lifecycle.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your typical project timeline?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary depending on scope and complexity. Small projects might take 4-8 weeks, while larger enterprise solutions can take 6 months or more. We provide a detailed timeline estimate after our initial discovery phase and break projects into milestones with regular deliverables.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide ongoing support after project completion?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer various support packages ranging from basic maintenance to full managed services. Our support includes bug fixes, performance optimization, security updates, and feature enhancements. We can tailor a support plan that matches your needs and budget.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you handle data security and privacy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Security is built into every layer of our solutions. We follow secure coding practices, implement encryption where appropriate, conduct regular security audits, and ensure compliance with relevant regulations (GDPR, HIPAA, etc.). All team members undergo security training and we can sign NDAs as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title white">Get In <span class="accent">Touch</span></h2>
+            <div class="contact-container">
+                <div class="contact-info animate slide-up delay-1">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> michaelcodes1256@gail.com</p>
+                    <p><i class="fas fa-phone"></i> +260 (974) 009-9741</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/micheal-matanda-626847249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/MICHEAL7400"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/michaelk.matanda"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mmk209503?utm_source=qr&igsh=MWxnYXByeXd2Z3N4cA=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form animate slide-up delay-2">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="How can we help?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="../ASSETS/Logo/logo2.jpg" alt="MantTeq Logo">
+                    </div>
+                    <p>We deliver innovative technology solutions that drive business growth and digital transformation.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/micheal-matanda-626847249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/MICHEAL7400"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/michaelk.matanda"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mmk209503?utm_source=qr&igsh=MWxnYXByeXd2Z3N4cA=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Custom Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cloud Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Security Audits</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Mobile Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Automation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MantTeq. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="../SCRIPTS/index.js">
+    </script>
+</body>
+</html>
