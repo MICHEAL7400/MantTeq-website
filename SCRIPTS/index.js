@@ -227,7 +227,7 @@ if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Here you would typically send the form data to your server
+        // server 
         // For demonstration, we'll simulate a successful submission
         
         // Store form data in localStorage to display on thank-you page
