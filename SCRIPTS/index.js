@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Form Submission - Modified to redirect to thank-you page
-const contactForm = document.querySelector('.contact-form');
+/*const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
@@ -247,7 +247,7 @@ if (contactForm) {
         // So you might want to remove this event listener if using FormSubmit
     });
 }
-
+*/
 // Scroll animations
 const animateElements = document.querySelectorAll('.animate');
 

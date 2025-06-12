@@ -487,73 +487,70 @@
             </div>
 
             <!-- Corrected FormSubmit Form -->
-            <form class="contact-form animate slide-up delay-2" action="https://formsubmit.co/michaelcodes1256@gmail.com" method="POST">
-                <!-- Required FormSubmit Fields -->
-                <input type="hidden" name="_subject" value="New Booking Request from MantTeq Website">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-                
-                <!-- Contact Fields -->
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="+260 (974) 009-741">
-                </div>
-                
-                <!-- Booking-Specific Fields -->
-                <div class="form-group">
-                    <label for="service">Service Needed</label>
-                    <select id="service" name="service" class="form-control" required>
-                        <option value="">Select a service...</option>
-                        <option value="Graphic Design">Graphic Design</option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="Mobile App Development">Mobile App Development</option>
-                        <option value="Cloud Solutions">Cloud Solutions</option>
-                        <option value="Security Audit">Security Audit</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="date">Preferred Contact Date</label>
-                    <input type="date" id="date" name="preferred_date" class="form-control">
-                </div>
-                
-                <div class="form-group">
-                    <label for="urgency">Urgency Level</label>
-                    <select id="urgency" name="urgency" class="form-control">
-                        <option value="Not urgent">Not urgent</option>
-                        <option value="Within 2 weeks">Within 2 weeks</option>
-                        <option value="ASAP">ASAP</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Project Details</label>
-                    <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project..." required></textarea>
-                </div>
-                
-                <!-- File Upload (Optional) -->
-                <div class="form-group">
-                    <label for="attachment">Upload Files (Optional)</label>
-                    <input type="file" id="attachment" name="attachment" class="form-control">
-                </div>
-                
-                <!-- reCAPTCHA -->
-                <div class="g-recaptcha" data-sitekey="6Lf9PF0rAAAAAA4CL8UxMtQzDYb_oZcWnPYalniM"></div>
-                
-                <button type="submit" class="submit-btn">Book Consultation</button>
-            </form>
+           <!-- Contact Form Section -->
+<form class="contact-form animate slide-up delay-2" action="https://formspree.io/f/xqabqyjv" method="POST">
+    <!-- Formspree Hidden Fields -->
+    <input type="hidden" name="_subject" value="New Booking Request from MantTeq Website">
+    <input type="hidden" name="_language" value="en"> <!-- Optional: Sets email language -->
+    <input type="hidden" name="_next" value="https://micheal7400.github.io/MantTeq-website/thank_you.html"> <!-- Redirect after submit -->
+    
+    <!-- Your Form Fields -->
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="form-control" placeholder="+260 (974) 009-741">
+    </div>
+    
+    <div class="form-group">
+        <label for="service">Service Needed</label>
+        <select id="service" name="service" class="form-control" required>
+            <option value="">Select a service...</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Mobile App Development">Mobile App Development</option>
+            <option value="Cloud Solutions">Cloud Solutions</option>
+            <option value="Security Audit">Security Audit</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="date">Preferred Contact Date</label>
+        <input type="date" id="date" name="preferred_date" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label for="urgency">Urgency Level</label>
+        <select id="urgency" name="urgency" class="form-control">
+            <option value="Not urgent">Not urgent</option>
+            <option value="Within 2 weeks">Within 2 weeks</option>
+            <option value="ASAP">ASAP</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Project Details</label>
+        <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project..." required></textarea>
+    </div>
+    
+    <!-- File Upload (Optional) -->
+    <div class="form-group">
+        <label for="attachment">Upload Files (Optional)</label>
+        <input type="file" id="attachment" name="attachment" class="form-control">
+    </div>
+    
+    <!-- Submit Button -->
+    <button type="submit" class="submit-btn">Book Consultation</button>
+</form>
         </div>
     </div>
 </section>
