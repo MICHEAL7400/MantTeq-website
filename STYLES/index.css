@@ -1367,3 +1367,12 @@ html {
         margin: 0 auto;
     }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:focus, button:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}

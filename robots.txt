@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://micheal7400.github.io/MantTeq-website/sitemap.xml

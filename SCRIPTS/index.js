@@ -278,3 +278,68 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 });
+
+// Newsletter Form Submission
+const newsletterForm = document.getElementById('newsletter-form');
+
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+        submitBtn.disabled = true;
+        
+        // Collect form data
+        const formData = new FormData(this);
+        
+        // Send to Formspree
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Redirect to thank you page on success
+                window.location.href = 'thank_you.html';
+            } else {
+                throw new Error('Network response was not ok');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Show error message without leaving the page
+            const errorMessage = document.createElement('div');
+            errorMessage.className = 'form-error-message';
+            errorMessage.textContent = 'There was a problem with your subscription. Please try again later.';
+            errorMessage.style.color = '#e74c3c';
+            errorMessage.style.marginTop = '10px';
+            errorMessage.style.textAlign = 'center';
+            
+            // Insert after the form
+            this.parentNode.insertBefore(errorMessage, this.nextSibling);
+            
+            // Remove after 5 seconds
+            setTimeout(() => {
+                errorMessage.remove();
+            }, 5000);
+        })
+        .finally(() => {
+            // Reset button state
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+        });
+    });
+}
+
+// Load non-critical JS after page load
+window.addEventListener('load', function() {
+  const script = document.createElement('script');
+  script.src = 'non-critical.js';
+  document.body.appendChild(script);
+});
