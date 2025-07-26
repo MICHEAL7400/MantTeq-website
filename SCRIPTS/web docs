@@ -1,0 +1,39 @@
+# MantTeq Website Documentation
+
+## Project Structure
+/
+├── index.html          # Main website file
+├── styles/
+│   └── index.css       # Main stylesheet
+├── scripts/
+│   └── index.js        # Main JavaScript file
+├── assets/             # All media assets
+│   ├── images/         # Image files
+│   └── logo/           # Logo files
+└── thank_you.html      # Thank you page
+
+## Technical Specifications
+- Built with HTML5, CSS3, and JavaScript
+- Responsive design (mobile-first approach)
+- Form handling via Formspree
+- Optimized for performance (lazy loading, service worker)
+
+## Features
+1. Responsive Carousel
+2. Service Modals
+3. FAQ Accordion
+4. Contact Form with Validation
+5. Smooth Scrolling
+6. Back-to-Top Button
+7. Newsletter Subscription
+
+## Deployment
+1. Hosted on GitHub Pages
+2. Custom domain can be configured via CNAME
+3. Automatic deployment on push to main branch
+
+## Maintenance
+- Update content by editing HTML files
+- Update styles in CSS file
+- Update functionality in JavaScript file
+- Test changes locally before pushing

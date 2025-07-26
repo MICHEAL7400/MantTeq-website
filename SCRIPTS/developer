@@ -1,0 +1,67 @@
+/**
+ * MantTeq Website JavaScript API Documentation
+ * 
+ * This file contains all the interactive functionality for the MantTeq website.
+ */
+
+/**
+ * CAROUSEL COMPONENT
+ * 
+ * Features:
+ * - Auto-advancing slides
+ * - Manual navigation controls
+ * - Touch support for mobile
+ * - Keyboard navigation
+ * - Indicator dots
+ * 
+ * Methods:
+ * nextSlide()       - Advances to next slide
+ * prevSlide()       - Goes to previous slide
+ * goToSlide(index)  - Jumps to specific slide
+ * resetAutoSlide()  - Resets the auto-advance timer
+ */
+
+/**
+ * SERVICE MODALS
+ * 
+ * Features:
+ * - Dynamic loading based on service clicked
+ * - Click outside to close
+ * - Escape key to close
+ * - Accessible focus management
+ * 
+ * Methods:
+ * Modal opens when service button clicked
+ * Modal closes with X button or outside click
+ */
+
+/**
+ * FAQ ACCORDION
+ * 
+ * Features:
+ * - Only one item open at a time
+ * - Smooth animations
+ * - Accessible ARIA attributes
+ */
+
+/**
+ * FORM HANDLING
+ * 
+ * Features:
+ * - Client-side validation
+ * - Success/error messages
+ * - Loading states
+ * - Integration with Formspree
+ */
+
+/**
+ * PERFORMANCE OPTIMIZATIONS
+ * 
+ * Implemented:
+ * - Lazy loading images
+ * - Debounced scroll events
+ * - Critical CSS inlined
+ * - Non-critical CSS deferred
+ * - Service worker caching
+ * - Minimized JavaScript
+ */
